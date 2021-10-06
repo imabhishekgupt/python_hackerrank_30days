@@ -1,0 +1,29 @@
+# Objective
+# Today, we will learn about the Array data structure. Check out the Tutorial tab for learning materials and an instructional video.
+# Task
+# Given an array, , of  integers, print 's elements in reverse order as a single line of space-separated numbers.
+# Example
+# Print 4 3 2 1. Each integer is separated by one space.
+# Input Format
+# The first line contains an integer,  (the size of our array).
+# The second line contains  space-separated integers that describe array 's elements.
+# Constraint
+# , where  is the  integer in the array.
+# Output Format
+# Print the elements of array  in reverse order as a single line of space-separated numbers.
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    arr = list(map(int, input().rstrip().split()))
+    m=map(str,arr[::-1])
+    print(" ".join(m))
